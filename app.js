@@ -16,6 +16,14 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
+app.get("/consultar", function(req, res) {
+    res.render("consultar");
+});
+
+app.get("/cadastrar", function(req, res) {
+    res.render("cadastrar");
+});
+
 //definindo o handlebars como mecanismo de modelo e definindo o layout padrão como "main"
 app.engine("handlebars", handlebars({defaultLayout: "main"}))
 app.set("view engine", "handlebars")
